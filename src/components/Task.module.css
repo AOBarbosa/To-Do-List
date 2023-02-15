@@ -1,0 +1,67 @@
+.taskBox {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+.newTask {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.newTask footer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.newTask input {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  gap: 0.75rem;
+
+  border: 1px solid var(--blue-dark);
+  cursor: pointer;
+  background: #5e60ce;
+
+  clip-path: circle(46% at 50% 50%); /* Deixa o checkbox redondo */
+}
+
+.newTask span {
+  width: 632px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.875rem;
+}
+
+.newTask button {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: var(--gray-300);
+  border: 0;
+  cursor: pointer;
+}
+
+.newTask button:hover {
+  background: var(--gray-400);
+  border-radius: 4px;
+  color: var(--red-danger);
+}
