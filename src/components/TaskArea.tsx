@@ -26,6 +26,9 @@ export function TaskArea() {
   const [task, setTask] = useState(["Essa é sua primeira tarefa!"]);
   const [newTask, setNewTask] = useState("");
 
+  const [countTasks, setCountTasks] = useState(1);
+  const [countDoneTasks, setCountDoneTasks] = useState(0);
+
   function handleCreateNewTask(event: FormEvent) {
     event.preventDefault();
 
@@ -37,8 +40,16 @@ export function TaskArea() {
     setNewTask(event.target.value);
   }
 
-  const [countTasks, setCountTasks] = useState(1);
-  const [countDoneTasks, setCountDoneTasks] = useState(0);
+  function deleteTask(taskToDelete: string) {
+    const tasksWithoutDeletedOne = task.filter((task) => {
+      return task !== taskToDelete;
+    });
+
+    setTask(tasksWithoutDeletedOne);
+    setCountTasks((state) => {
+      return state - 1;
+    });
+  }
 
   function handleCountTasks() {
     setCountTasks((state) => {
@@ -85,7 +96,7 @@ export function TaskArea() {
 
       <div className={styles.newTaskArea}>
         {task.map((task) => {
-          return <Task key={task} content={task} />;
+          return <Task key={task} content={task} onDeleteTask={deleteTask} />;
         })}
       </div>
     </div>
