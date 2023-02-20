@@ -1,7 +1,15 @@
 # Desktop
 
+### Todo Preview
+
 <h1 display = "flex" align-items = "center">
-    <img alt="Preview Desktop" title="Preview Desktop" src="public/preview.jpg" />
+    <img alt="Preview Desktop" title="Preview Desktop" src="public/todoPreview.jpg" />
+</h1>
+
+### Empty Todo Preview
+
+<h1 display = "flex" align-items = "center">
+    <img alt="Preview Desktop" title="Preview Desktop" src="public/emptyTodoPreview.png" />
 </h1>
 
 <br>
