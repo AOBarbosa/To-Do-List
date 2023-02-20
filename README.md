@@ -19,7 +19,8 @@
 This project was developed using the following technologies:
 
 - [ReactJS](https://reactjs.org/)
-- [Date-fns](https://date-fns.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [uuid](https://github.com/thenativeweb/uuidv4)
 - [Phosphor Icons](https://phosphoricons.com/)
 
 ## 🚀 Getting started
@@ -27,9 +28,9 @@ This project was developed using the following technologies:
 Clone the project and access the folder.
 
 ```bash
-git clone https://github.com/AOBarbosa/Ignite-Feed-TS.git
+git clone https://github.com/AOBarbosa/To-Do-List.git
 
-cd Ignite-Feed-TS
+cd To-Do-List
 
 ```
 
@@ -45,6 +46,6 @@ npm run dev
 
 You can view the project through the links below:
 
-- [Figma](<https://www.figma.com/file/7FMmtXDzzVFc4OONuc4884/Ignite-Feed-(Community)?node-id=0%3A1&t=lltpgIpxVkF2wX6f-1>)
+- [Figma](<https://www.figma.com/file/L88adFIgasZ660uzB9dnNN/ToDo-List-(Copy)?node-id=0%3A1&t=nkvm2KxVmEMhHykC-1>)
 
 Remembering that you need to have a [Figma](http://figma.com/) account to access it.
