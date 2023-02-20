@@ -37,7 +37,7 @@
   clip-path: circle(46% at 50% 50%); /* Deixa o checkbox redondo */
 }
 
-.newTask span {
+.newTask label {
   width: 632px;
   height: 40px;
   display: flex;
