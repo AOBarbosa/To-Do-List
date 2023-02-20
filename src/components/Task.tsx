@@ -1,22 +1,44 @@
 import { Trash } from "phosphor-react";
 import styles from "./Task.module.css";
+import { TaskProps } from "./TaskArea";
 
-interface TaskProps {
-  content: string;
+interface TaskComponentProps extends TaskProps {
   onDeleteTask: (task: string) => void;
+  onCheck: (taskId: string) => void;
 }
 
-export function Task({ content, onDeleteTask }: TaskProps) {
+export function Task({
+  id,
+  content,
+  isCompleted,
+  onDeleteTask,
+  onCheck,
+}: TaskComponentProps) {
   function handleDeleteTask() {
-    onDeleteTask(content);
+    onDeleteTask(id);
+  }
+
+  function handleCheck() {
+    onCheck(id);
   }
 
   return (
     <div className={styles.taskBox}>
       <form className={styles.newTask}>
         <footer>
-          <input type="checkbox" />
-          <span>{content}</span>
+          <input type="checkbox" onChange={handleCheck} />
+          <label
+            style={
+              isCompleted
+                ? {
+                    textDecoration: "line-through",
+                    color: "#808080",
+                  }
+                : {}
+            }
+          >
+            {content}
+          </label>
         </footer>
 
         <button title="delete task" onClick={handleDeleteTask}>
