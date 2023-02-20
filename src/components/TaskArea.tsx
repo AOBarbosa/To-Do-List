@@ -72,9 +72,11 @@ export function TaskArea() {
       return state - 1;
     });
 
-    setCountDoneTasks((state) => {
-      return state - 1;
-    });
+    if (countDoneTasks > 0) {
+      setCountDoneTasks((state) => {
+        return state - 1;
+      });
+    }
   }
 
   return (
