@@ -139,7 +139,7 @@ export function TaskArea() {
           <div className={styles.emptyTasks}>
             <ListChecks size={64} />
             <strong>You have no tasks registered</strong>
-            <p>Create tasks and organize your to-do items</p>
+            <p>Create tasks and organize your to-do list</p>
           </div>
         )}
       </div>
