@@ -107,13 +107,13 @@ export function TaskArea() {
       <div className={styles.taskInfo}>
         <div className={styles.createdTasks}>
           <strong>
-            Tarefas criadas <span>{countTasks}</span>
+            Created tasks <span>{countTasks}</span>
           </strong>
         </div>
 
         <div className={styles.doneTasks}>
           <strong>
-            Concluidas{" "}
+            Completed{" "}
             <span>
               {countDoneTasks} de {countTasks}
             </span>
