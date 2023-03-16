@@ -94,6 +94,7 @@ export function TaskArea() {
             <button
               type="submit"
               title="add a task"
+              data-testid="add-task-button"
               onClick={handleCountTasks}
               disabled={isNewTaskEmpty}
             >
