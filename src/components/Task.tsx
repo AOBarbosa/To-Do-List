@@ -41,7 +41,7 @@ export function Task({
           </label>
         </footer>
 
-        <button title="delete task" onClick={handleDeleteTask}>
+        <button title="delete task" onClick={handleDeleteTask} data-testid="remove-task-button">
           <Trash size={18} />
         </button>
       </form>

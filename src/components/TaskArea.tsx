@@ -82,7 +82,7 @@ export function TaskArea() {
   return (
     <div className={styles.taskArea}>
       <div className={styles.addTask}>
-        <form onSubmit={handleCreateNewTask} className={styles.taskForm}>
+        <form onSubmit={handleCreateNewTask} className={styles.taskForm} data-testid="taskArea">
           <textarea
             name="task"
             placeholder="Add a new task"
@@ -94,6 +94,7 @@ export function TaskArea() {
             <button
               type="submit"
               title="add a task"
+              data-testid="add-task-button"
               onClick={handleCountTasks}
               disabled={isNewTaskEmpty}
             >
