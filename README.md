@@ -22,6 +22,7 @@ This project was developed using the following technologies:
 - [TypeScript](https://www.typescriptlang.org/)
 - [uuid](https://github.com/thenativeweb/uuidv4)
 - [Phosphor Icons](https://phosphoricons.com/)
+- [Vitest](https://vitest.dev/)
 
 ## 🚀 Getting started
 
@@ -38,8 +39,18 @@ Run this command to install the dependencies.
 
 ```bash
 npm i
+```
 
+And then run the following command to run the project.
+
+```bash
 npm run dev
+```
+
+Run this command to run the unit tests.
+
+```bash
+npm run test
 ```
 
 ## 🔖 Layout
